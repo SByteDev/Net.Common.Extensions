@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Extensions", "DotNet.Extensions\DotNet.Extensions.csproj", "{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Extensions.Tests", "DotNet.Extensions.Tests\DotNet.Extensions.Tests.csproj", "{E52D329F-B41E-48F9-AA9E-526AD05364FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52D329F-B41E-48F9-AA9E-526AD05364FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52D329F-B41E-48F9-AA9E-526AD05364FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52D329F-B41E-48F9-AA9E-526AD05364FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52D329F-B41E-48F9-AA9E-526AD05364FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
