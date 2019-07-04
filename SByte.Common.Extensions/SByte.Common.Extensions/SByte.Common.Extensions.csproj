@@ -3,15 +3,15 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageId>sbyte.dotnet.extensions</PackageId>
-        <Title>DotNet.Extensions</Title>
+        <PackageId>SByte.Common.Extensions</PackageId>
+        <Title>.Net Extensions</Title>
         <Authors>Denys Fiediaiev</Authors>
         <Description>A collection of extensions for .Net.</Description>
         <Copyright>Denys Fiediaiev</Copyright>
         <PackageTags>dotnet, extensions</PackageTags>
-        <PackageProjectUrl>https://github.com/Prin53/DotNet.Extensions</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/Prin53/DotNet.Extensions/blob/master/LICENSE</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/Prin53/DotNet.Extensions</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Prin53/Common.Extensions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Prin53/Common.Extensions/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Prin53/Common.Extensions</RepositoryUrl>
     </PropertyGroup>
 
 </Project>

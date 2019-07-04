@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DotNet.Extensions\DotNet.Extensions.csproj" />
+      <ProjectReference Include="..\SByte.Common.Extensions\SByte.Common.Extensions.csproj" />
     </ItemGroup>
 
 </Project>

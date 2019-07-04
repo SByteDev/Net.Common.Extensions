@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SByte.Common.Extensions", "SByte.Common.Extensions\SByte.Common.Extensions.csproj", "{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SByte.Common.Extensions.Tests", "SByte.Common.Extensions.Tests\SByte.Common.Extensions.Tests.csproj", "{06611766-8FFA-429B-893B-2D1CF80384A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E38A1EB-F462-4958-B7C2-99BBDC9C871E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06611766-8FFA-429B-893B-2D1CF80384A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06611766-8FFA-429B-893B-2D1CF80384A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06611766-8FFA-429B-893B-2D1CF80384A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06611766-8FFA-429B-893B-2D1CF80384A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
