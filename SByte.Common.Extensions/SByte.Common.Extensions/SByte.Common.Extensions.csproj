@@ -9,9 +9,9 @@
         <Description>A collection of extensions for .Net.</Description>
         <Copyright>Denys Fiediaiev</Copyright>
         <PackageTags>dotnet, extensions</PackageTags>
-        <PackageProjectUrl>https://github.com/Prin53/Common.Extensions</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/Prin53/Common.Extensions/blob/master/LICENSE</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/Prin53/Common.Extensions</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Prin53/DotNet.Common.Extensions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Prin53/DotNet.Common.Extensions/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Prin53/DotNet.Common.Extensions</RepositoryUrl>
     </PropertyGroup>
 
 </Project>
