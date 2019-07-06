@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace SByte.Common.Extensions
+namespace SByteDev.Common.Extensions
 {
     public static class CommandExtensions
     {
