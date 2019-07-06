@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>SByteDev.Common.Extensions</PackageId>
+        <Title>.Net Extensions</Title>
+        <Authors>Denys Fiediaiev</Authors>
+        <Description>A collection of extensions for .Net.</Description>
+        <Copyright>Denys Fiediaiev</Copyright>
+        <PackageTags>dotnet, extensions</PackageTags>
+        <PackageProjectUrl>https://github.com/SByteDev/DotNet.Common.Extensions</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/SByteDev/DotNet.Common.Extensions/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/SByteDev/DotNet.Common.Extensions</RepositoryUrl>
+        <PackageVersion>1.0.2</PackageVersion>
+    </PropertyGroup>
+
+</Project>

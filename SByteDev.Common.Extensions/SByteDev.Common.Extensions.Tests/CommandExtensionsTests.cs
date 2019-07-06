@@ -2,7 +2,7 @@ using System.Windows.Input;
 using NSubstitute;
 using NUnit.Framework;
 
-namespace DotNet.Extensions.Tests
+namespace SByteDev.Common.Extensions.Tests
 {
     [TestFixture]
     public class CommandExtensionsTests

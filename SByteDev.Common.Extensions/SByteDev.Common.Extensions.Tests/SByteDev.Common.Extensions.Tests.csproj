@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
-
         <IsPackable>false</IsPackable>
     </PropertyGroup>
 
@@ -14,7 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DotNet.Extensions\DotNet.Extensions.csproj" />
+      <ProjectReference Include="..\SByteDev.Common.Extensions\SByteDev.Common.Extensions.csproj" />
     </ItemGroup>
 
 </Project>
