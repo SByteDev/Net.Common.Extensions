@@ -129,6 +129,11 @@ namespace SByteDev.Common.Extensions
                 throw new ArgumentNullException(nameof(enumerable));
             }
 
+            if (enumerable is List<T> list)
+            {
+                return list.GetRange(index, length);
+            }
+
             return enumerable.Skip(index).Take(length);
         }
 
