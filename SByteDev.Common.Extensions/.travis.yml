@@ -1,0 +1,4 @@
+language: csharp
+solution: SByteDev.Common.Extensions.sln
+install:
+  - nuget restore SByteDev.Common.Extensions.sln
