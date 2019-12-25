@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>SByteDev.Common.Extensions</PackageId>
-        <PackageVersion>1.0.3</PackageVersion>
+        <PackageVersion>1.0.4</PackageVersion>
         <Title>.Net Extensions</Title>
         <Description>A collection of extensions for .Net.</Description>
         <Copyright>SByteDev</Copyright>

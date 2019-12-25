@@ -129,10 +129,17 @@ namespace SByteDev.Common.Extensions
                 throw new ArgumentNullException(nameof(enumerable));
             }
 
+            if (enumerable is List<T> list)
+            {
+                return list.GetRange(index, length);
+            }
+
             return enumerable.Skip(index).Take(length);
         }
 
-        /// <summary>Indicates whether the specified enumerable is <c>null</c> or has a length of zero.</summary>
+        /// <summary>
+        /// Indicates whether the specified enumerable is <c>null</c> or has a length of zero.
+        /// </summary>
         /// <param name="enumerable">The enumerable to check.</param>
         /// <returns><c>True</c> if the enumerable is <c>null</c> or has a zero length.</returns>
         public static bool IsNullOrEmpty(this IEnumerable enumerable)
