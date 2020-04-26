@@ -60,6 +60,13 @@ To get the number of elements in a sequence:
 var count = default(IEnumerable).Count();
 ```
 
+To compute the sum of a sequence of TimeSpan values:
+
+```cs
+var sum = new[] {100L, 1000L, 10000L}.Sum(TimeSpan.FromTicks);
+var sum = new[] {TimeSpan.FromDays(1), TimeSpan.FromHours(2)}.Sum();
+```
+
 ### String Extensions
 To check is the specified string is null or an empty string:
 

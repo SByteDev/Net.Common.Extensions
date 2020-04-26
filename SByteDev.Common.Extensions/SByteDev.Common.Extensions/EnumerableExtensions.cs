@@ -109,8 +109,8 @@ namespace SByteDev.Common.Extensions
             }
 
             return enumerable
-                       .Select((item, index) => new {Item = item, Index = index})
-                       .FirstOrDefault(item => comparer.Equals(item.Item, value))?.Index ?? -1;
+                .Select((item, index) => new {Item = item, Index = index})
+                .FirstOrDefault(item => comparer.Equals(item.Item, value))?.Index ?? -1;
         }
 
         /// <summary>
@@ -175,6 +175,45 @@ namespace SByteDev.Common.Extensions
             }
 
             return count;
+        }
+
+        /// <summary>
+        /// Computes the sum of a sequence of <see cref="F:System.TimeSpan"></see> values.
+        /// </summary>
+        /// <param name="source">A sequence of <see cref="F:System.TimeSpan"></see> values to calculate the sum of.</param>
+        /// <returns>The sum of the values in the sequence.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="source">value</paramref> is null.</exception>
+        public static TimeSpan Sum(this IEnumerable<TimeSpan> source)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            return source.Aggregate(TimeSpan.Zero, (current, item) => current + item);
+        }
+
+        /// <summary>
+        /// Computes the sum of a sequence of <see cref="F:System.TimeSpan"></see> values.
+        /// </summary>
+        /// <param name="source">A sequence of values that are used to calculate a sum.</param>
+        /// <param name="selector">A transform function to apply to each element.</param>
+        /// <typeparam name="TSource">The type of the elements of <paramref name="source">value</paramref>.</typeparam>
+        /// <returns>The sum of the projected values.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="source">value</paramref> or <paramref name="selector">value</paramref> is null.</exception>
+        public static TimeSpan Sum<TSource>(this IEnumerable<TSource> source, Func<TSource, TimeSpan> selector)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            if (selector == null)
+            {
+                throw new ArgumentNullException(nameof(selector));
+            }
+
+            return source.Aggregate(TimeSpan.Zero, (current, item) => current + selector(item));
         }
     }
 }

@@ -208,5 +208,80 @@ namespace SByteDev.Common.Extensions.Tests
                 Assert.AreEqual(count, enumerable.Count());
             }
         }
+
+        [TestFixture]
+        public class WhenSumCalled
+        {
+            [TestFixture]
+            public class AndTheEnumerableIsNull
+            {
+                [Test]
+                public void ExceptionShouldBeThrown()
+                {
+                    Assert.Throws<ArgumentNullException>(() => default(IEnumerable<TimeSpan>).Sum());
+                }
+            }
+
+            [Test]
+            [TestCase(new long[0])]
+            [TestCase(new[] {10L})]
+            [TestCase(new[] {100L, 1000L, 10000L})]
+            public void SumShouldBeReturned(long[] values)
+            {
+                var enumerable = values.Select(TimeSpan.FromTicks);
+
+                Assert.AreEqual(TimeSpan.FromTicks(values.Sum()), enumerable.Sum());
+            }
+        }
+
+        [TestFixture]
+        public class WhenSumWithSelectorCalled
+        {
+            [TestFixture]
+            public class AndTheEnumerableIsNull
+            {
+                [Test]
+                public void ExceptionShouldBeThrown()
+                {
+                    Assert.Throws<ArgumentNullException>(() => default(IEnumerable<TimeSpan>).Sum(null));
+                }
+            }
+
+            [TestFixture]
+            public class AndTheSelectorIsNull
+            {
+                [Test]
+                public void ExceptionShouldBeThrown()
+                {
+                    Assert.Throws<ArgumentNullException>(() => Substitute.For<IEnumerable<TimeSpan>>().Sum(null));
+                }
+            }
+
+            [Test]
+            [TestCase(new long[0])]
+            [TestCase(new[] {10L})]
+            [TestCase(new[] {100L, 1000L, 10000L})]
+            public void SelectorShouldBeUsed(long[] values)
+            {
+                var count = 0;
+
+                var _ = values.Sum(item =>
+                {
+                    count++;
+                    return TimeSpan.FromTicks(item);
+                });
+
+                Assert.AreEqual(values.Length, count);
+            }
+
+            [Test]
+            [TestCase(new long[0])]
+            [TestCase(new[] {10L})]
+            [TestCase(new[] {100L, 1000L, 10000L})]
+            public void SumShouldBeReturned(long[] values)
+            {
+                Assert.AreEqual(TimeSpan.FromTicks(values.Sum()), values.Sum(TimeSpan.FromTicks));
+            }
+        }
     }
 }
