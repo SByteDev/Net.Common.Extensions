@@ -1,8 +1,8 @@
 # Extensions for .Net
-![GitHub](https://img.shields.io/github/license/SByteDev/Net.MvvmCross.Extensions.svg)
-![Nuget](https://img.shields.io/nuget/v/SByteDev.MvvmCross.Extensions.svg)
-
-[![Build Status](https://travis-ci.org/SByteDev/Net.Common.Extensions.svg?branch=develop)](https://travis-ci.org/SByteDev/Net.Common.Extensions)
+![GitHub](https://img.shields.io/github/license/SByteDev/Net.Common.Extensions.svg)
+![Nuget](https://img.shields.io/nuget/v/SByteDev.Common.Extensions.svg)
+![CI](https://github.com/SByteDev/Net.Common.Extensions/workflows/CI/badge.svg)
+![CD](https://github.com/SByteDev/Net.Common.Extensions/workflows/CD/badge.svg)
 [![codecov](https://codecov.io/gh/SByteDev/Net.Common.Extensions/branch/develop/graph/badge.svg)](https://codecov.io/gh/SByteDev/Net.Common.Extensions)
 [![CodeFactor](https://www.codefactor.io/repository/github/sbytedev/net.common.extensions/badge)](https://www.codefactor.io/repository/github/sbytedev/net.common.extensions)
 
