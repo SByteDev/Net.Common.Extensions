@@ -13,7 +13,7 @@ namespace SByteDev.Common.Extensions.Tests
             [TestCase("")]
             [TestCase(" ")]
             [TestCase("string")]
-            public void ShouldReturnIsNullOrEmptyResult(string input)
+            public void ResultOfIsNullOrEmptyShouldBeReturned(string input)
             {
                 Assert.AreEqual(string.IsNullOrEmpty(input), input.IsNullOrEmpty());
             }
@@ -27,7 +27,7 @@ namespace SByteDev.Common.Extensions.Tests
             [TestCase("")]
             [TestCase(" ")]
             [TestCase("string")]
-            public void ShouldReturnIsNullOrWhiteSpaceResult(string input)
+            public void ResultOfIsNullOrWhiteSpaceShouldBeReturned(string input)
             {
                 Assert.AreEqual(string.IsNullOrWhiteSpace(input), input.IsNullOrWhiteSpace());
             }
