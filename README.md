@@ -60,6 +60,19 @@ To get the number of elements in a sequence:
 var count = default(IEnumerable).Count();
 ```
 
+### String Extensions
+To check is the specified string is null or an empty string:
+
+```cs
+var isNullOrEmpty = "string".IsNullOrEmpty();
+```
+
+To check is the specified string is null, empty, or consists only of white-space characters:
+
+```cs
+var isNullOrEmpty = "string".IsNullOrWhiteSpace();
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
