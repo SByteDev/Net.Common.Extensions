@@ -1,8 +1,8 @@
 # Extensions for .Net
-![GitHub](https://img.shields.io/github/license/SByteDev/Net.MvvmCross.Extensions.svg)
-![Nuget](https://img.shields.io/nuget/v/SByteDev.MvvmCross.Extensions.svg)
-
-[![Build Status](https://travis-ci.org/SByteDev/Net.Common.Extensions.svg?branch=develop)](https://travis-ci.org/SByteDev/Net.Common.Extensions)
+![GitHub](https://img.shields.io/github/license/SByteDev/Net.Common.Extensions.svg)
+![Nuget](https://img.shields.io/nuget/v/SByteDev.Common.Extensions.svg)
+![CI](https://github.com/SByteDev/Net.Common.Extensions/workflows/CI/badge.svg)
+![CD](https://github.com/SByteDev/Net.Common.Extensions/workflows/CD/badge.svg)
 [![codecov](https://codecov.io/gh/SByteDev/Net.Common.Extensions/branch/develop/graph/badge.svg)](https://codecov.io/gh/SByteDev/Net.Common.Extensions)
 [![CodeFactor](https://www.codefactor.io/repository/github/sbytedev/net.common.extensions/badge)](https://www.codefactor.io/repository/github/sbytedev/net.common.extensions)
 
@@ -58,6 +58,26 @@ To get the number of elements in a sequence:
 
 ```cs
 var count = default(IEnumerable).Count();
+```
+
+To compute the sum of a sequence of TimeSpan values:
+
+```cs
+var sum = new[] {100L, 1000L, 10000L}.Sum(TimeSpan.FromTicks);
+var sum = new[] {TimeSpan.FromDays(1), TimeSpan.FromHours(2)}.Sum();
+```
+
+### String Extensions
+To check is the specified string is null or an empty string:
+
+```cs
+var isNullOrEmpty = "string".IsNullOrEmpty();
+```
+
+To check is the specified string is null, empty, or consists only of white-space characters:
+
+```cs
+var isNullOrEmpty = "string".IsNullOrWhiteSpace();
 ```
 
 ## Contributing
