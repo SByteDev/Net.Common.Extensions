@@ -77,7 +77,7 @@ var isNullOrEmpty = "string".IsNullOrEmpty();
 To check is the specified string is null, empty, or consists only of white-space characters:
 
 ```cs
-var isNullOrEmpty = "string".IsNullOrWhiteSpace();
+var isNullOrWhiteSpace = "string".IsNullOrWhiteSpace();
 ```
 
 ## Contributing
