@@ -1,8 +1,8 @@
 # Extensions for .Net
 ![GitHub](https://img.shields.io/github/license/SByteDev/Net.Common.Extensions.svg)
 ![Nuget](https://img.shields.io/nuget/v/SByteDev.Common.Extensions.svg)
-![CI](https://github.com/SByteDev/Net.Common.Extensions/workflows/CI/badge.svg?branch=develop)
-![CD](https://github.com/SByteDev/Net.Common.Extensions/workflows/CD/badge.svg?branch=master)
+[![Build Status](https://img.shields.io/bitrise/40e21d4cde8b28d2/develop?label=development&token=6vUov_7mxXR8fFbH99aCOA&branch)](https://app.bitrise.io/app/d1fd3128deec4532)
+[![Build Status](https://img.shields.io/bitrise/40e21d4cde8b28d2/master?label=production&token=6vUov_7mxXR8fFbH99aCOA&branch)](https://app.bitrise.io/app/d1fd3128deec4532)
 [![codecov](https://codecov.io/gh/SByteDev/Net.Common.Extensions/branch/develop/graph/badge.svg)](https://codecov.io/gh/SByteDev/Net.Common.Extensions)
 [![CodeFactor](https://www.codefactor.io/repository/github/sbytedev/net.common.extensions/badge)](https://www.codefactor.io/repository/github/sbytedev/net.common.extensions)
 
